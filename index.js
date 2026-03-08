@@ -31,26 +31,21 @@ if(TotalWealth=="")
 
 
 
-let BMICalc=()=>
-    {   
+let BMICalc = () => {
 
-let weight = document.getElementById("w8").value
-let height =document.getElementById("h8").value
-height = height / 100;
+let weight = document.getElementById("w8").value;
+let height = document.getElementById("h8").value;
+
+if(weight=="" || height==""){
+document.getElementById("rslt2").value = "Please enter some value";
+return;
+}
+
 let BMIresult = weight / (height * height);
-document.getElementById("rslt2").value= BMIresult.toFixed(2);
 
-if(weight=="" || height=="")
-    { 
-    document.getElementById("rslt2").value= "Please enter some value";
-    }}
+document.getElementById("rslt2").value = BMIresult.toFixed(2);
 
-    // let formRest2=()=>
-    // {
-    //   document.getElementById("re-set").reset();
-    // }
-
-
+}
 
     // BMI Calculator
 // let weight = Number(prompt("Please Enter Your Weight"));
