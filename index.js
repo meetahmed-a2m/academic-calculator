@@ -32,11 +32,13 @@ if(TotalWealth=="")
 
 
 let BMICalc=()=>
-    {     
+    {   
+
 let weight = document.getElementById("w8").value
 let height =document.getElementById("h8").value
+height = height / 100;
 let BMIresult = weight / (height * height);
-document.getElementById("rslt2").value= BMIresult;
+document.getElementById("rslt2").value= BMIresult.toFixed(2);
 
 if(weight=="" || height=="")
     { 
@@ -47,7 +49,6 @@ if(weight=="" || height=="")
     // {
     //   document.getElementById("re-set").reset();
     // }
-
 
 
 
