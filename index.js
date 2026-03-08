@@ -18,11 +18,9 @@ let ZakatCalc=()=>
 let TotalWealth = document.getElementById("tw").value
 let ZakatPercent =  (TotalWealth / 100) * 0.025;
 document.getElementById("rslt").value= ZakatPercent;
-
-
 if(TotalWealth=="")
     { 
-    document.getElementById("rslt").value= "Please enter value";
+    document.getElementById("rslt").value= "Please enter some value";
     }}
  let formRest=()=>
     {
